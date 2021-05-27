@@ -1,0 +1,66 @@
+<div class="container">
+  <mat-card class="flex-card">
+    <form class="expample-form">
+      <div class="flex-primary">
+        <h1>Character add</h1>
+        <mat-form-field>
+          <mat-label>name</mat-label>
+          <input matInput (value)="formCharacter.name" [(ngModel)]="formCharacter.name" name="name" id="name">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>status</mat-label>
+          <input matInput (value)="formCharacter.status" [(ngModel)]="formCharacter.status" name="status" id="status">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>species</mat-label>
+          <input matInput (value)="formCharacter.species" [(ngModel)]="formCharacter.species" name="species"
+            id="species">
+        </mat-form-field>
+        <button mat-flat-button color="primary" (click)="onSubmit($event)">enviar</button>
+      </div>
+    </form>
+  </mat-card>
+</div>
+<div class="container">
+  <div class="flex">
+    <mat-card class="card-character">
+      <mat-card-header class="card-header">
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>Rick Sanchez</mat-card-title>
+        <mat-card-subtitle>Nihilista empedernido</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../../assets/img-placeholder.png" alt="img-test">
+      <mat-card-content class="card-content">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto totam voluptatem ex doloribus incidunt
+        laboriosam sequi corporis. Temporibus similique inventore, at saepe velit consequuntur nesciunt soluta tempore
+        nam rerum alias.
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card-character">
+      <mat-card-header class="card-header">
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>Rick Sanchez</mat-card-title>
+        <mat-card-subtitle>Nihilista empedernido</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../../assets/img-placeholder.png" alt="img-test">
+      <mat-card-content class="card-content">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto totam voluptatem ex doloribus incidunt
+        laboriosam sequi corporis. Temporibus similique inventore, at saepe velit consequuntur nesciunt soluta tempore
+        nam rerum alias.
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card-character">
+      <mat-card-header class="card-header">
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>Rick Sanchez</mat-card-title>
+        <mat-card-subtitle>Nihilista empedernido</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../../assets/img-placeholder.png" alt="img-test">
+      <mat-card-content class="card-content">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto totam voluptatem ex doloribus incidunt
+        laboriosam sequi corporis. Temporibus similique inventore, at saepe velit consequuntur nesciunt soluta tempore
+        nam rerum alias.
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
