@@ -12,6 +12,8 @@ import { LayoutPrincipalComponent } from './components/layout-principal/layout-p
 import ModulesMaterialUI from './material-ui/';
 import { CharactersFormTableComponent } from './components/characters-form-table/characters-form-table.component';
 import { CharactersService } from './services/apiRMServices/characters.service';
+import { FormUsuarioComponent } from './components/form-usuario/form-usuario.component';
+import { UsuarioService } from './services/usuario.service';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { CharactersService } from './services/apiRMServices/characters.service';
     NavigationComponent,
     LayoutPrincipalComponent,
     CharactersFormTableComponent,
+    FormUsuarioComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,7 @@ import { CharactersService } from './services/apiRMServices/characters.service';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [CharactersService],
+  providers: [UsuarioService, CharactersService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
