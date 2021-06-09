@@ -21,20 +21,23 @@
     </form>
   </mat-card>
 </div>
+<p class="centerP">{{this.visible}}</p>
 <div class="container">
   <div class="flex">
     <mat-card class="card-character">
-      <mat-card-header class="card-header">
-        <div mat-card-avatar class="header-image"></div>
-        <mat-card-title>Rick Sanchez</mat-card-title>
-        <mat-card-subtitle>Nihilista empedernido</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="../../../assets/img-placeholder.png" alt="img-test">
-      <mat-card-content class="card-content">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto totam voluptatem ex doloribus incidunt
-        laboriosam sequi corporis. Temporibus similique inventore, at saepe velit consequuntur nesciunt soluta tempore
-        nam rerum alias.
-      </mat-card-content>
+      <button class="nonne" (blur)="handleBlur()" (click)="handleClick()">
+        <mat-card-header class="card-header">
+          <div mat-card-avatar class="header-image"></div>
+          <mat-card-title>Rick Sanchez</mat-card-title>
+          <mat-card-subtitle>Nihilista empedernido</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../../assets/img-placeholder.png" alt="img-test">
+        <mat-card-content class="card-content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto totam voluptatem ex doloribus incidunt
+          laboriosam sequi corporis. Temporibus similique inventore, at saepe velit consequuntur nesciunt soluta tempore
+          nam rerum alias.
+        </mat-card-content>
+      </button>
     </mat-card>
     <mat-card class="card-character">
       <mat-card-header class="card-header">

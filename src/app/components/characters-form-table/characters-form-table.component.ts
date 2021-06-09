@@ -18,6 +18,7 @@ export class CharactersFormTableComponent implements OnInit {
     },
   };
   public test!: Characters[];
+  public visible: boolean = false;
 
   constructor(private charServices: CharactersService) {}
 
@@ -39,5 +40,15 @@ export class CharactersFormTableComponent implements OnInit {
       this.formCharacter = this.test[0];
       console.log(this.test);
     });
+  }
+
+  handleClick(): void {
+    this.visible = !this.visible;
+    console.log('clicked', this.visible);
+  }
+
+  handleBlur(): void {
+    this.visible = false;
+    console.log('blur', this.visible);
   }
 }
